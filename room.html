@@ -30,14 +30,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="경주 래태리펜션 - 객실안내" />
   <meta property="og:description" content="경주 래태리 펜션에서 감성 가득한 독채 풀빌라와 개별수영장, 노천탕·사우나·스파, 그리고 곳간 감성 공간까지 프라이빗한 힐링을 만끽해보세요." />
-  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/04/9sZX8LCQjftl.jpg" />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/04/prCzGHJe4FiV.jpg" />
   <meta property="og:url" content="https://raetaeri.kr" />
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="경주 래태리펜션 - 객실안내" />
   <meta name="twitter:description" content="경주 래태리 펜션에서 감성 가득한 독채 풀빌라와 개별수영장, 노천탕·사우나·스파, 그리고 곳간 감성 공간까지 프라이빗한 힐링을 만끽해보세요." />
-  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/04/9sZX8LCQjftl.jpg" />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/04/prCzGHJe4FiV.jpg" />
   <meta name="naver-site-verification" content="386a91bbf6bc60557df37f59cb1e41b816657626" />
   <meta name="google-site-verification" content="h3Lj0iTGZzzxfEoxvEgYGNOH5exmLHXu8jlQ4fdLC8Q" />
 </head>
@@ -243,6 +243,14 @@
                 </div>
               </div>
             </div>
+            <!-- s: 객실 평면도 — 원본 객실 상세의 평면도 크롤링 이미지가 있을 때만 노출.
+                 제목 영역 없이 도면 이미지 한 장만 놓는다. 없으면 매퍼가 구간째 숨긴다. -->
+            <div class="room_floorplan" data-room-floorplan-section style="display: none">
+              <!-- data-* : data-room-floorplan-image
+                   roomtypes[current] 평면도 이미지 → 없으면 섹션 미노출 -->
+              <img alt="객실 평면도" data-room-floorplan-image />
+            </div>
+            <!--// 객실 평면도 -->
             <div
               class="main_room"
               style="background: color-mix(in srgb, var(--color-primary) 55%, transparent)"
